@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeezChat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container title -->
+    <div class="container">
+      <header>
+        <h1>DeezChat</h1>
+      </header>
+      <!-- buttons for chatrooms -->
+      <h2>Choose a chatroom:</h2>
+      <nav>
+        <button class="btn" id="general">#general</button>
+        <button class="btn" id="gaming">#gaming</button>
+        <button class="btn" id="music">#music</button>
+        <button class="btn" id="off-topic">#off-topic</button>
+      </nav>
+      <!-- chat lists / windows -->
+      <main>
+        <ul class="chat-list"></ul>
+      </main>
+
+      <!-- new chat form -->
+      <section>
+        <form action="" class="new-chat">
+          <label for="message" class="label">Your message: </label>
+          <input type="text" id="message" required />
+          <input type="submit" value="send" class="click" />
+        </form>
+      </section>
+
+      <!-- update name form -->
+      <section>
+        <form action="" class="new-name">
+          <label for="name" class="label">Update name: </label>
+          <input type="text" id="name" required />
+          <input type="submit" value="update" class="click" />
+        </form>
+      </section>
+
+      <aside>
+        <p></p>
+      </aside>
+    </div>
+    <script src="lib/moment/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var Config = {
+        apiKey: "AIzaSyBukblkhEDvhXgkACSlnwwts7nlvvbruMs",
+        authDomain: "deezchat-90087.firebaseapp.com",
+        projectId: "deezchat-90087",
+        storageBucket: "deezchat-90087.appspot.com",
+        messagingSenderId: "614766950863",
+        appId: "1:614766950863:web:3fe331fe5643bf46507aba",
+        measurementId: "G-HYFB0D88N4",
+      };
+
+      firebase.initializeApp(Config);
+    </script>
+    <script src="scripts/chat.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

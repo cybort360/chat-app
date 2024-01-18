@@ -1,0 +1,243 @@
+:root {
+  --header-font: "Rubik", sans-serif;
+  --body-font: "Lato", sans-serif;
+}
+
+body {
+  background: #f9f5eb;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--header-font);
+  letter-spacing: 0.2rem;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--body-font);
+  font-size: 20px;
+  font-weight: 300;
+}
+
+h1,
+h2 {
+  color: #ea5455;
+  text-align: center;
+}
+
+.btn {
+  all: unset;
+  background-color: #002b5b;
+  color: #fff;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 6px;
+  outline: none !important;
+  box-shadow: none !important;
+  position: relative;
+  left: 120px;
+  font-family: var(--body-font);
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.btn:focus,
+.btn:hover {
+  outline: none !important;
+  color: #ea5455;
+}
+
+section {
+  position: relative;
+  left: 15px;
+}
+
+.new-chat {
+  margin-bottom: 40px;
+}
+
+.click {
+  all: unset;
+  background-color: #002b5b;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  position: relative;
+  right: 4px;
+  font-family: var(--body-font);
+  font-weight: 300;
+}
+
+.label {
+  background: #e4dccf;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-family: var(--body-font);
+  font-weight: 300;
+}
+
+#message {
+  all: unset;
+  height: 38.4px;
+  width: 400px;
+  background: white;
+  position: relative;
+  bottom: -0.2px;
+  font-family: var(--body-font);
+  font-weight: 300;
+  padding-left: 10px;
+}
+
+#name {
+  all: unset;
+  height: 38.4px;
+  width: 385px;
+  background: white;
+  position: relative;
+  padding-left: 10px;
+  bottom: -0.2px;
+  font-family: var(--body-font);
+  font-weight: 300;
+}
+
+ul {
+  border: 1px solid #e4dccf;
+  border-radius: 4px;
+}
+
+li {
+  list-style: none;
+  font-family: var(--body-font);
+  font-weight: 300;
+  color: #ea5455;
+  margin: 10px 0px;
+}
+
+hr {
+  border-color: #e4dccf;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 599px;
+  position: relative;
+  right: 40px;
+}
+
+p {
+  font-family: var(--body-font);
+  color: #002b5b;
+  text-align: center;
+}
+.red {
+  color: #ea5455;
+  font-size: 1.5rem;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.message {
+  font-weight: bold;
+  color: #002b5b;
+}
+
+.time {
+  font-size: 0.7em;
+  color: #002b5b;
+}
+
+@media (max-width: 700px) {
+  .container {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  hr {
+    border-color: #e4dccf;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 350px;
+    position: relative;
+    right: 40px;
+  }
+
+  .btn {
+    all: unset;
+    background-color: #002b5b;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none !important;
+    box-shadow: none !important;
+    position: relative;
+    left: 10px;
+    font-family: var(--body-font);
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  section {
+    position: relative;
+    left: 10px;
+  }
+
+  .click {
+    all: unset;
+    background-color: #002b5b;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    right: 4px;
+    font-family: var(--body-font);
+    font-weight: 300;
+  }
+
+  .label {
+    background: #e4dccf;
+    padding: 10px;
+    font-size: 12px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: var(--body-font);
+    font-weight: 300;
+  }
+
+  #message {
+    all: unset;
+    height: 38.4px;
+    width: 180px;
+    background: white;
+    position: relative;
+    bottom: -0.2px;
+    font-family: var(--body-font);
+    font-weight: 300;
+    padding-left: 10px;
+  }
+
+  #name {
+    all: unset;
+    height: 38.4px;
+    width: 175px;
+    background: white;
+    position: relative;
+    padding-left: 10px;
+    bottom: -0.2px;
+    font-family: var(--body-font);
+    font-weight: 300;
+  }
+}
